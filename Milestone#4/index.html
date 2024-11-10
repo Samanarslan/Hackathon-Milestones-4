@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Editable Resume</h1></header>
+<h2>Made By Saman Arslan</h2>
+<main>
+    <!-- Resume Form -->
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name: <input type="text" id="name" placeholder="Enter your name"></label>
+            <label>Last Name: <input type="text" id="lastName" placeholder="Enter Your Last Name"></label>
+            <label>Contact No: <input type="text" id="contact" placeholder="Enter your contact number"></label>
+            <label>Email: <input type="email" id="email" placeholder="Enter your email"></label>
+            <label>LinkedIn: <input type="text" id="linkedin" placeholder="LinkedIn profile URL"></label>
+            <label>Profile Image: <input type="file" id="image" accept="image/*"></label>
+        </fieldset>
+
+        <!-- Education Section -->
+        <fieldset>
+            <legend>Education</legend>
+            <button type="button" id="addEducation">Add Education</button>
+            <div id="educationContainer"></div>
+        </fieldset>
+
+        <!-- Experience Section -->
+        <fieldset>
+            <legend>Experience</legend>
+            <button type="button" id="addExperience">Add Experience</button>
+            <div id="experienceContainer"></div>
+        </fieldset>
+
+        <!-- Skills Section -->
+        <fieldset>
+            <legend>Skills</legend>
+            <button type="button" id="addSkills">Add Skills</button>
+            <div id="skillsContainer"></div>
+        </fieldset>
+        
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <!-- Generated Resume Output -->
+    <div id="resumeOutput" style="display: none;">
+        <h2>Resume</h2>
+        <img id="profileImage" src="#" alt="Profile Picture" style="max-width: 150px; border-radius: 50%; display: block; margin-bottom: 10px;">
+        <section id="resumeName"></section>
+        <section id="resumeContact"></section>
+        <section id="resumeEmail"></section>
+        <section id="resumeLinkedIn"></section>
+        <h2>Education</h2>
+        <div id="educationOutput"></div>
+        <h2>Experience</h2>
+        <div id="experienceOutput"></div>
+        <h2>Skills</h2>
+        <div id="skillsOutput"></div>
+        <button id="editResume">Edit Resume</button>
+    </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
+

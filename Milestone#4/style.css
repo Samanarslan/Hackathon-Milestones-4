@@ -1,0 +1,156 @@
+/* Reset styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: -ms-inline-flexbox;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8efef; /* Soft, professional background color */
+    color: #251f1f;
+    font-weight: 600;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-style: italic;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #1f9688;
+    text-transform: uppercase;
+}
+
+/* Main container styling */
+main {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 1px solid #cfd8dc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00796b;
+}
+
+/* Label styling */
+label {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 0.99rem;
+    color: #455a64;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="file"],
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #b0bec5;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #00796b;
+    outline: offset 1rem; 
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.2);
+    font-weight: 400;
+}
+
+/* Button styling */
+button {
+    background-color: #00796b;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px); /* subtle lift effect */
+    box-shadow: 0px 4px 10px rgba(0, 77, 64, 0.4);
+}
+
+/* Hover effects for sections */
+#educationContainer input:hover,
+#experienceContainer input:hover,
+#skillsContainer input:hover {
+    border-color: #00796b;
+    background-color: #e0f2f1;
+}
+
+/* Resume Output styling */
+#resumeOutput {
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    border: 1px solid #b0bec5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#resumeOutput h2 {
+    font-size: 1.5rem;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+#resumeOutput section {
+    margin-bottom: 20px;
+    color: #2b1949;
+}
+
+#resumeOutput p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #455a64;
+}
+
+/* Profile Image styling */
+#profileImage {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
